@@ -1,0 +1,51 @@
+﻿@model TheGym_2.Models.TrainerSchedule
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TrainerSchedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HallGym.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HallGym.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trainer.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trainer.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartWorkout)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartWorkout)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndWorkout)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndWorkout)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
